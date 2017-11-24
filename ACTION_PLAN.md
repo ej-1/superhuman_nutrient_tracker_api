@@ -23,7 +23,6 @@ Users
 - Eatenfoods
 
 
-
 # ATTRIBUTES
 
 Foodtypes
@@ -70,7 +69,7 @@ Eatenfoods
 	food_type_name (gotten by relationship?)
 	user_id
 	amount
-	weight_metric
+	metric_used
 	eaten_at
 
 Users
