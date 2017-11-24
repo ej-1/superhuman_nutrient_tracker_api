@@ -66,8 +66,8 @@ Foodtypes
 
 Eatenfoods
 	id
-	eaten_food_id
-	eaten_food_name (gotten by relationship?)
+	food_type_id
+	food_type_name (gotten by relationship?)
 	user_id
 	amount
 	weight_metric
