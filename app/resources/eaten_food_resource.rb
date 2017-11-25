@@ -4,5 +4,6 @@ class EatenFoodResource < JSONAPI::Resource
   attributes :eaten_at
 
   belongs_to :user
+  has_one :food_type
   filter :user # whats this?
 end
