@@ -10,7 +10,10 @@ Rails.application.configure do
   config.eager_load = true
 
   # Show full error reports.
-  config.consider_all_requests_local = true
+  config.consider_all_requests_local = false
+  # set to false => This will prevent the server from returning the HTML
+  # formatted error messages when an exception happens. Not strictly necessary,
+  # but it makes for nicer output when debugging using curl or a client library.
 
   # Enable/disable caching. By default caching is disabled.
   if Rails.root.join('tmp/caching-dev.txt').exist?
