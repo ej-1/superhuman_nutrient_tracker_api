@@ -1,0 +1,2 @@
+class DailyProfile < ApplicationRecord
+end

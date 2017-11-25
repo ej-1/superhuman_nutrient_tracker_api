@@ -1,0 +1,2 @@
+class DailyProfilesController < ApplicationController
+end
