@@ -7,6 +7,7 @@ class CreateEatenFoods < ActiveRecord::Migration[5.0]
       t.float :amount
       t.string :metric_used
 
+      t.belongs_to :daily_profile, index: true
       t.timestamps
     end
   end

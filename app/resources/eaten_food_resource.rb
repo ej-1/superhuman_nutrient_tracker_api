@@ -3,7 +3,7 @@ class EatenFoodResource < JSONAPI::Resource
   attributes :metric_used
   attributes :eaten_at
 
-  belongs_to :user
+  belongs_to :daily_profile
   has_one :food_type
   filter :user # whats this?
 end

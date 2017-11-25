@@ -1,4 +1,7 @@
 class DailyProfileResource < JSONAPI::Resource
+  belongs_to :user
+  has_many :eaten_foods
+
   attributes :eaten_at
   attributes :energy
   attributes :carbohydrates
@@ -45,7 +48,7 @@ class DailyProfileResource < JSONAPI::Resource
   attributes :alcohol_rdi_precentage
   attributes :ash_rdi_precentage
   attributes :sucrose_rdi_precentage
-  attributes :whole_grains_total
+  attributes :whole_grains_total_rdi_precentage
   attributes :sugar_types_rdi_precentage
   attributes :epa_rdi_precentage
   attributes :dpa_rdi_precentage

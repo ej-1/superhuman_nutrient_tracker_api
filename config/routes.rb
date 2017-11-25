@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   jsonapi_resources :users
   jsonapi_resources :eaten_foods
   jsonapi_resources :food_types
+  jsonapi_resources :daily_profiles
 end

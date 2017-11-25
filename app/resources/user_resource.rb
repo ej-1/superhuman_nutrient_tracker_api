@@ -4,5 +4,5 @@ class UserResource < JSONAPI::Resource
   attributes :email
   attributes :api_key
 
-  has_many :eaten_foods
+  has_many :daily_profiles
 end

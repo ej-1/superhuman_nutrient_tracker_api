@@ -46,7 +46,7 @@ class CreateDailyProfiles < ActiveRecord::Migration[5.0]
       t.float :alcohol_rdi_precentage
       t.float :ash_rdi_precentage
       t.float :sucrose_rdi_precentage
-      t.float :whole_grains_total
+      t.float :whole_grains_total_rdi_precentage
       t.float :sugar_types_rdi_precentage
       t.float :epa_rdi_precentage
       t.float :dpa_rdi_precentage
@@ -73,6 +73,7 @@ class CreateDailyProfiles < ActiveRecord::Migration[5.0]
       t.float :zinc_rdi_precentage
       t.float :waste_rdi_precentage # probably don't need this, but we will see.
 
+      t.belongs_to :user, index: true
       t.timestamp :eaten_at
 
       t.timestamps

@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-  has_many :eaten_foods
+  has_many :daily_profiles
 end

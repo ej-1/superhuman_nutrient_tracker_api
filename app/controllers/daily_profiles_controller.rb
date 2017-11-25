@@ -1,2 +1,2 @@
-class DailyProfilesController < ApplicationController
+class DailyProfilesController < JSONAPI::ResourceController
 end
