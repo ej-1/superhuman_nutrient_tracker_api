@@ -103,10 +103,6 @@ November 1st, 2017 (daily_profile.eaten_at => 'November 1st, 2017')
 100 grams of Unboiled spaghetti
 100 grams of Fried chicken
 
-Remove eaten_at from eaten_foods. Each daily_profile will have that field instead.
-Add birth_date for User model.
-Add nutrient percentages of RDI on DailyProfile model.
-
 daily_profiles:
 Now new amounts of nutrients are added to the DailyProfile for each eaten_food eaten that day, which saves re-calulating those values. Percentage calulcation of RDI (recommended daily intake) is still needed.
 
