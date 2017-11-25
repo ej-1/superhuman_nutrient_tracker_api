@@ -104,6 +104,16 @@ November 1st, 2017 (daily_profile.eaten_at => 'November 1st, 2017')
 100 grams of Fried chicken
 
 Remove eaten_at from eaten_foods. Each daily_profile will have that field instead.
+Add birth_date for User model.
+Add nutrient percentages of RDI on DailyProfile model.
+
+daily_profiles:
+Now new amounts of nutrients are added to the DailyProfile for each eaten_food eaten that day, which saves re-calulating those values. Percentage calulcation of RDI (recommended daily intake) is still needed.
+
+Things that impact the RDI a person has is gender and age. Gender we assume the user can fill in correctly. Age is in a interval that sets RDI usually, e.g. between 20-30 years, 40-50 years etc. Age should be calculated by birth_date that user inputs.
+Percentage of RDI consumed for a day does not need to be so flexible. It should be enough to save it in the DailyProfile. If a user later changes their age for some reason, then the previous DailyProfiles should not use memory on the server to re-calculate percentages on previous DailyProfiles. The effect should only affect the current day and future DailyProfiles created.
+
+A alternative would be to do the calculations in on the clientside with React. Not sure how much tht could affect loading time though. The current solution with saving the dat in DailyProfile and doing the calculation only once every time a eaten_food is added is most minimal.
 
 Metric:
 I kept metric as a unique field on each eaten_food, because it can be unique for each eaten_food. Not just something standardized like .lbs or kg or grams, but also more custom measurements meals, scoops etc.
