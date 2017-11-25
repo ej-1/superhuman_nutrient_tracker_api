@@ -36,6 +36,5 @@ class FoodTypeResource < JSONAPI::Resource
   attributes :zinc
   attributes :waste
 
-  has_one :eaten_food
   filter :eaten_food # whats this?
 end
