@@ -85,10 +85,11 @@ Would have been done with a many-to-many relationship with a third model in betw
 To cache data:
 In order to not needed to calculate and keep in-memory data about what a person has eaten each day, it is probably best to create another table called DailyProfile.
 
-user.daily_profiles
+`user.daily_profiles`
+Needed to if the app is going to display and summary of e.g. a weeks consumtion. I will not create a weekly_profile, just do a in-memory calculation for that.
+Example:
 
-
-daily_profile.eaten_foods
+`daily_profile.eaten_foods`
 Needed to display what foods and how much a user has eaten.
 Example:
 
