@@ -6,7 +6,6 @@ class CreateEatenFoods < ActiveRecord::Migration[5.0]
       t.integer :user_id
       t.float :amount
       t.string :metric_used
-      t.timestamp :eaten_at
 
       t.timestamps
     end
