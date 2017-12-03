@@ -1,0 +1,6 @@
+Pair programming notes:
+
+Example API endpoint requests and responses:
+/api/v1/food/1
+food: [ {"vitamin a": 0.20, "vitamin b": 0.10 } ]
+
